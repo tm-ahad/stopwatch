@@ -1,14 +1,47 @@
-button#stopwatch {
-  margin: auto;
-  padding: auto;
+.body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgb(24, 147, 255);
-  color: honeydew;
 }
-button#stopwatch:focus {
-  border: 2px solid honeydew;
+
+button#start {
+  border-radius: 8px;
+  height: 40px;
+  width: 60px;
+  cursor: pointer;
+  background-color: #1893ff;
+  color: #fff5db;
+}
+button#start:hover {
+  border: 2px solid #ff380b;
+  -webkit-transition: 0.8ms;
+  transition: 0.8ms;
+}
+
+button#stop {
+  border-radius: 8px;
+  height: 40px;
+  width: 60px;
+  cursor: pointer;
+  background-color: #ff380b;
+  color: #fff5db;
+}
+button#stop:hover {
+  border: 2px solid #1893ff;
+  -webkit-transition: 0.8ms;
+  transition: 0.8ms;
+}
+
+button#reset {
+  border-radius: 8px;
+  height: 40px;
+  width: 60px;
+  cursor: pointer;
+  background-color: #51ff00;
+  color: #fff5db;
+}
+button#reset:hover {
+  border: 2px solid #ffee00;
   -webkit-transition: 0.8ms;
   transition: 0.8ms;
 }/*# sourceMappingURL=style.css.map */

@@ -8,9 +8,20 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <p id="stopwatch">00:00:00.00</p>
-    <button type="button" id="start">Start</button>
+    <div class="body">
+      <div class="timer">
+        <big>
+          <h1>
+            <span id="stopwatch">00:00:00.00</span>
+          </h1>
+        </big>
+        <button id="start">Start</button>
+        <button id="stop" height="40" width="80">Stop</button>
+        <button id="reset">Reset</button>
+      </div>
+    </div>
+
     <script src="./script.js"></script>
-    <button id="stop">Stop</button>
+    <script src="./responsive.js"></script>
   </body>
 </html>

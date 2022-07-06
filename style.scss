@@ -1,19 +1,47 @@
-$colors: (
-  primary: rgb(24, 147, 255),
-  white: honeydew
-);
+$primary: #1893ff;
+$white: #fff5db;
+$red: #ff380b;
+$succsess: #51ff00;
+$honeyYellow: #ffee00;
 
-@mixin common {
-  margin: auto;
-  padding: auto;
+@mixin bodyCommon {
   align-items: center;
 }
-button#stopwatch {
-  @include common;
-  background-color: map-get($map: $colors, $key: primary);
-  color: map-get($map: $colors, $key: white);
-  &:focus {
-    border: 2px solid map-get($map: $colors, $key: white);
-    transition: 0.8ms;
+@mixin buttonCommon {
+  border-radius: 8px;
+  height: 40px;
+  width: 60px;
+  cursor: pointer;
+}
+.body {
+  @include bodyCommon;
+}
+
+button#start {
+  @include buttonCommon;
+  background-color: $primary;
+  color: $white;
+  &:hover {
+    border: 2px solid $red;
+    transition: 10s;
+  }
+}
+button#stop {
+  @include buttonCommon;
+  background-color: $red;
+  color: $white;
+  &:hover {
+    border: 2px solid $primary;
+    transition: 10s;
+  }
+}
+
+button#reset {
+  @include buttonCommon;
+  background-color: $succsess;
+  color: $white;
+  &:hover {
+    border: 2px solid $honeyYellow;
+    transition: 10s;
   }
 }
