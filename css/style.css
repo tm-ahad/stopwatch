@@ -1,0 +1,14 @@
+button#stopwatch {
+  margin: auto;
+  padding: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgb(24, 147, 255);
+  color: honeydew;
+}
+button#stopwatch:focus {
+  border: 2px solid honeydew;
+  -webkit-transition: 0.8ms;
+  transition: 0.8ms;
+}/*# sourceMappingURL=style.css.map */
